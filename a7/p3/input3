@@ -1,0 +1,216 @@
+start BOF procedures EOF
+BOF BOF
+procedures procedure procedures
+procedure INT ID LPAREN params RPAREN LBRACE dcls statements RETURN expr SEMI RBRACE
+INT int
+ID f
+LPAREN (
+params paramlist
+paramlist dcl COMMA paramlist
+dcl type ID
+type INT
+INT int
+ID g
+COMMA ,
+paramlist dcl
+dcl type ID
+type INT
+INT int
+ID h
+RPAREN )
+LBRACE {
+dcls
+statements
+RETURN return
+expr term
+term factor
+factor ID
+ID h
+SEMI ;
+RBRACE }
+procedures procedure procedures
+procedure INT ID LPAREN params RPAREN LBRACE dcls statements RETURN expr SEMI RBRACE
+INT int
+ID g
+LPAREN (
+params paramlist
+paramlist dcl COMMA paramlist
+dcl type ID
+type INT
+INT int
+ID f
+COMMA ,
+paramlist dcl
+dcl type ID
+type INT
+INT int
+ID h
+RPAREN )
+LBRACE {
+dcls
+statements
+RETURN return
+expr term
+term factor
+factor ID
+ID h
+SEMI ;
+RBRACE }
+procedures procedure procedures
+procedure INT ID LPAREN params RPAREN LBRACE dcls statements RETURN expr SEMI RBRACE
+INT int
+ID h
+LPAREN (
+params paramlist
+paramlist dcl COMMA paramlist
+dcl type ID
+type INT
+INT int
+ID f
+COMMA ,
+paramlist dcl
+dcl type ID
+type INT
+INT int
+ID g
+RPAREN )
+LBRACE {
+dcls
+statements
+RETURN return
+expr term
+term factor
+factor ID LPAREN arglist RPAREN
+ID h
+LPAREN (
+arglist expr COMMA arglist
+expr term
+term factor
+factor ID
+ID f
+COMMA ,
+arglist expr
+expr term
+term factor
+factor ID
+ID g
+RPAREN )
+SEMI ;
+RBRACE }
+procedures main
+main INT WAIN LPAREN dcl COMMA dcl RPAREN LBRACE dcls statements RETURN expr SEMI RBRACE
+INT int
+WAIN wain
+LPAREN (
+dcl type ID
+type INT
+INT int
+ID x
+COMMA ,
+dcl type ID
+type INT
+INT int
+ID y
+RPAREN )
+LBRACE {
+dcls
+statements
+RETURN return
+expr term
+term factor
+factor ID LPAREN arglist RPAREN
+ID f
+LPAREN (
+arglist expr COMMA arglist
+expr term
+term factor
+factor ID LPAREN arglist RPAREN
+ID g
+LPAREN (
+arglist expr COMMA arglist
+expr term
+term factor
+factor ID LPAREN arglist RPAREN
+ID h
+LPAREN (
+arglist expr COMMA arglist
+expr term
+term factor
+factor ID
+ID x
+COMMA ,
+arglist expr
+expr term
+term factor
+factor ID
+ID y
+RPAREN )
+COMMA ,
+arglist expr
+expr term
+term factor
+factor ID LPAREN arglist RPAREN
+ID h
+LPAREN (
+arglist expr COMMA arglist
+expr term
+term factor
+factor ID
+ID y
+COMMA ,
+arglist expr
+expr term
+term factor
+factor ID
+ID x
+RPAREN )
+RPAREN )
+COMMA ,
+arglist expr
+expr term
+term factor
+factor ID LPAREN arglist RPAREN
+ID g
+LPAREN (
+arglist expr COMMA arglist
+expr term
+term factor
+factor ID LPAREN arglist RPAREN
+ID h
+LPAREN (
+arglist expr COMMA arglist
+expr term
+term factor
+factor ID
+ID y
+COMMA ,
+arglist expr
+expr term
+term factor
+factor ID
+ID x
+RPAREN )
+COMMA ,
+arglist expr
+expr term
+term factor
+factor ID LPAREN arglist RPAREN
+ID h
+LPAREN (
+arglist expr COMMA arglist
+expr term
+term factor
+factor ID
+ID x
+COMMA ,
+arglist expr
+expr term
+term factor
+factor ID
+ID y
+RPAREN )
+RPAREN )
+RPAREN )
+SEMI ;
+RBRACE }
+EOF EO

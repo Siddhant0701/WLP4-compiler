@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "*.ps1": "powershell",
+        "iostream": "cpp",
+        "*.tcc": "cpp"
+    }
+}

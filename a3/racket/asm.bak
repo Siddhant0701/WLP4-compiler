@@ -1,0 +1,13 @@
+#lang racket
+;;;
+;;; Racket starter code for CS241 A3
+;;;
+;;; This file contains an area where you can put your main code (or all
+;;; of your code) for A3.
+
+(require "scanning.rkt")
+
+;; For now, just scan the entirety of standard input and print it back to
+;; standard output
+(define (scan) (for [(line (in-lines))]
+  (displayln (scan line))))
